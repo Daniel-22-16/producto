@@ -31,7 +31,7 @@
             label7 = new Label();
             label8 = new Label();
             groupBox1 = new GroupBox();
-            textBox7 = new TextBox();
+            comboBox1 = new ComboBox();
             textBox9 = new TextBox();
             label9 = new Label();
             label10 = new Label();
@@ -39,12 +39,13 @@
             textBox8 = new TextBox();
             textBox6 = new TextBox();
             textBox5 = new TextBox();
-            textBox3 = new TextBox();
             textBox2 = new TextBox();
             label6 = new Label();
             label5 = new Label();
             label4 = new Label();
             label3 = new Label();
+            comboBox2 = new ComboBox();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -68,7 +69,7 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox7);
+            groupBox1.Controls.Add(comboBox1);
             groupBox1.Controls.Add(textBox9);
             groupBox1.Controls.Add(label9);
             groupBox1.Controls.Add(label10);
@@ -79,13 +80,15 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "groupBox1";
             // 
-            // textBox7
+            // comboBox1
             // 
-            textBox7.Location = new Point(41, 152);
-            textBox7.Multiline = true;
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(200, 34);
-            textBox7.TabIndex = 15;
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(41, 152);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(127, 23);
+            comboBox1.TabIndex = 25;
+            comboBox1.Text = "Seleccionar Empresa";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // textBox9
             // 
@@ -93,6 +96,7 @@
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(66, 23);
             textBox9.TabIndex = 14;
+            textBox9.TextChanged += textBox9_TextChanged;
             // 
             // label9
             // 
@@ -136,6 +140,7 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(224, 32);
             textBox8.TabIndex = 24;
+            textBox8.TextChanged += textBox8_TextChanged;
             // 
             // textBox6
             // 
@@ -144,6 +149,7 @@
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(281, 34);
             textBox6.TabIndex = 23;
+            textBox6.TextChanged += textBox6_TextChanged;
             // 
             // textBox5
             // 
@@ -152,13 +158,7 @@
             textBox5.Name = "textBox5";
             textBox5.Size = new Size(192, 23);
             textBox5.TabIndex = 22;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(233, 373);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(66, 23);
-            textBox3.TabIndex = 21;
+            textBox5.TextChanged += textBox5_TextChanged;
             // 
             // textBox2
             // 
@@ -167,6 +167,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(150, 35);
             textBox2.TabIndex = 20;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label6
             // 
@@ -204,15 +205,36 @@
             label3.TabIndex = 16;
             label3.Text = "USUARIO";
             // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(196, 370);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(118, 23);
+            comboBox2.TabIndex = 25;
+            comboBox2.Text = "Seleccionar Pago";
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(363, 494);
+            button1.Name = "button1";
+            button1.Size = new Size(116, 41);
+            button1.TabIndex = 26;
+            button1.Text = "GUARDAR";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1072, 569);
+            Controls.Add(button1);
+            Controls.Add(comboBox2);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label8);
-            Controls.Add(textBox3);
             Controls.Add(label7);
             Name = "Form2";
             Text = "Form2";
@@ -229,7 +251,6 @@
         private Label label7;
         private Label label8;
         private GroupBox groupBox1;
-        private TextBox textBox7;
         private TextBox textBox9;
         private Label label9;
         private Label label10;
@@ -242,6 +263,8 @@
         private Label label5;
         private Label label4;
         private Label label3;
-        private TextBox textBox3;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private Button button1;
     }
 }

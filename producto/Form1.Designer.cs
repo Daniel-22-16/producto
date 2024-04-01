@@ -67,6 +67,7 @@
             label4 = new Label();
             label3 = new Label();
             label1 = new Label();
+            button9 = new Button();
             menuStrip1.SuspendLayout();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
@@ -98,6 +99,7 @@
             // groupBox1
             // 
             groupBox1.BackColor = SystemColors.ButtonHighlight;
+            groupBox1.Controls.Add(button9);
             groupBox1.Controls.Add(proveedor);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(textBox4);
@@ -164,6 +166,7 @@
             button5.TabIndex = 35;
             button5.Text = "Precio";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button11
             // 
@@ -173,6 +176,7 @@
             button11.TabIndex = 45;
             button11.Text = "Tallas";
             button11.UseVisualStyleBackColor = true;
+            button11.Click += button11_Click;
             // 
             // button18
             // 
@@ -182,6 +186,7 @@
             button18.TabIndex = 40;
             button18.Text = "Cantidad";
             button18.UseVisualStyleBackColor = true;
+            button18.Click += button18_Click;
             // 
             // pictureBox3
             // 
@@ -199,6 +204,7 @@
             button19.TabIndex = 28;
             button19.Text = "Blusas";
             button19.UseVisualStyleBackColor = true;
+            button19.Click += button19_Click;
             // 
             // groupBox7
             // 
@@ -221,6 +227,7 @@
             button8.TabIndex = 35;
             button8.Text = "Precio";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button12
             // 
@@ -230,6 +237,7 @@
             button12.TabIndex = 45;
             button12.Text = "Tallas";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button17
             // 
@@ -239,6 +247,7 @@
             button17.TabIndex = 40;
             button17.Text = "Cantidad";
             button17.UseVisualStyleBackColor = true;
+            button17.Click += button17_Click;
             // 
             // pictureBox2
             // 
@@ -256,6 +265,7 @@
             button7.TabIndex = 28;
             button7.Text = "Pantalones";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // groupBox5
             // 
@@ -278,6 +288,7 @@
             button13.TabIndex = 35;
             button13.Text = "Precio";
             button13.UseVisualStyleBackColor = true;
+            button13.Click += button13_Click;
             // 
             // button14
             // 
@@ -287,6 +298,7 @@
             button14.TabIndex = 45;
             button14.Text = "Tallas";
             button14.UseVisualStyleBackColor = true;
+            button14.Click += button14_Click;
             // 
             // button16
             // 
@@ -296,6 +308,7 @@
             button16.TabIndex = 40;
             button16.Text = "Cantidad";
             button16.UseVisualStyleBackColor = true;
+            button16.Click += button16_Click;
             // 
             // pictureBox6
             // 
@@ -313,6 +326,7 @@
             button6.TabIndex = 27;
             button6.Text = "Sudaderas";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // groupBox3
             // 
@@ -335,6 +349,7 @@
             button3.TabIndex = 25;
             button3.Text = "Camisas";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button10
             // 
@@ -344,6 +359,7 @@
             button10.TabIndex = 35;
             button10.Text = "Precio";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button20
             // 
@@ -353,6 +369,7 @@
             button20.TabIndex = 45;
             button20.Text = "Tallas";
             button20.UseVisualStyleBackColor = true;
+            button20.Click += button20_Click;
             // 
             // button15
             // 
@@ -362,6 +379,7 @@
             button15.TabIndex = 40;
             button15.Text = "Cantidad";
             button15.UseVisualStyleBackColor = true;
+            button15.Click += button15_Click;
             // 
             // pictureBox1
             // 
@@ -389,6 +407,7 @@
             textBox4.Name = "textBox4";
             textBox4.Size = new Size(105, 25);
             textBox4.TabIndex = 28;
+            textBox4.TextChanged += textBox4_TextChanged;
             // 
             // textBox3
             // 
@@ -397,6 +416,7 @@
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(177, 25);
             textBox3.TabIndex = 27;
+            textBox3.TextChanged += textBox3_TextChanged;
             // 
             // textBox1
             // 
@@ -414,6 +434,7 @@
             button1.TabIndex = 2;
             button1.Text = "NUEVO";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -424,6 +445,7 @@
             button2.TabIndex = 3;
             button2.Text = "GURADAR";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button4
             // 
@@ -434,6 +456,7 @@
             button4.TabIndex = 5;
             button4.Text = "CANCELAR";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // label4
             // 
@@ -465,6 +488,9 @@
             label1.TabIndex = 17;
             label1.Text = "Producto";
             label1.Click += label1_Click;
+            // 
+            // button9
+            //
             // 
             // Form1
             // 
@@ -537,5 +563,6 @@
         private Button button14;
         private Button button16;
         private PictureBox pictureBox6;
+        private Button button9;
     }
 }
